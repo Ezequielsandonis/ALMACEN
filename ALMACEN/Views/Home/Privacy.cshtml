@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Proyecto MVC";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1>@ViewData["Title"]</h1>
+            <p class="lead">
+                El proyecto ALMACEN es una aplicación web construida utilizando el patrón de arquitectura MVC (Modelo-Vista-Controlador) de ASP.NET.
+            </p>
+            <p class="lead">
+                <strong>Funcionamiento:</strong>
+                La aplicación utiliza Entity Framework, un ORM (Mapeador de Objetos Relacionales), para conectarse a la base de datos local. Entity Framework simplifica la interacción con la base de datos, permitiendo que las operaciones CRUD se realicen de manera más sencilla y orientada a objetos.
+            </p>
+            <p class="lead">
+                <strong>Buenas Prácticas Implementadas:</strong>
+                - <strong>DTOs (Objetos de Transferencia de Datos):</strong> Se utilizan DTOs para transferir datos entre la capa de presentación y la capa de servicios, evitando acoplamientos innecesarios entre las capas.
+                - <strong>Repositorios:</strong> Se ha implementado un patrón de repositorio para abstraer la lógica de acceso a datos. Esto facilita la mantenibilidad y prueba de la aplicación.
+                - <strong>AutoMapper:</strong> La biblioteca AutoMapper se utiliza para mapear automáticamente objetos de un tipo a otro, simplificando el código y reduciendo la necesidad de escribir conversiones manuales.
+            </p>
+            <p class="lead">
+                <strong>Conexión a la Base de Datos:</strong>
+                La aplicación se conecta a una base de datos local utilizando Entity Framework. La configuración de la cadena de conexión y el contexto de la base de datos se encuentran en el archivo de configuración `appsettings.json`.
+            </p>
+            <p class="lead">
+                <strong>Exploración:</strong>
+                Utiliza la sección de "Productos" para crear, actualizar, visualizar y eliminar información sobre productos en el almacén. Los enlaces de navegación te permitirán explorar diferentes funcionalidades de la aplicación.
+            </p>
+        </div>
+    </div>
+</div>
+

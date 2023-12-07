@@ -1,0 +1,10 @@
+﻿@model ErrorViewModel
+
+<h3>Error</h3>
+<p>Se ha producido un error al procesar tu solicitud.</p>
+<p>RequestId: <strong>@Model.RequestId</strong></p>
+
+@if (Model.ShowRequestId)
+{
+    <p>Consulta el soporte técnico con este ID de solicitud cuando informes sobre este error.</p>
+}
